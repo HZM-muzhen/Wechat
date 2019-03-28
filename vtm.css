@@ -210,7 +210,7 @@ header {
     width: 400px;
     opacity: 0.8;
 }
-
+/*过渡*/
 .textmore {
     position: absolute;
     font-size: x-large;
@@ -219,7 +219,6 @@ header {
     text-align: center;
     margin: 35px 0 0 150px;
 }
-
 /*右悬浮*/
 .nav {
     width: 80px;
@@ -284,12 +283,12 @@ header {
 .left-navigation a {
     color: white;
     text-decoration:none;
-    padding: 16px 35px;
+    padding: 13px 36px;;
 }
 .left-navigation a:hover{
     color:black;
 }
-.left-navigation div:hover {
+.left-navigation li:hover {
     background-color: white;
 }
 .ln-1,
