@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 1519px;
+    height: 1250px;
+}
+/*页眉设计*/
+header {
+    height: 518px;
+    width: auto;
+    float: none;
+}
+
+.container {
+    height: 39px;
+    width: 100%;
+    float: none;
+    display: inline-block;
+    background-color: #3C3C3C;
+}
+
+.address {
+    width: 60%;
+    margin: auto;
+    float: left;
+    text-align: center;
+}
+
+.email {
+    position: relative;
+    left: -70px;
+    float: none;
+}
+
+.container ul {
+    list-style-type: none;
+    height: 39px;
+    float: none;
+    width: auto;
+    margin: 0 auto;
+    padding: 0;
+}
+
+    .container ul li {
+        display: inline-block;
+        padding: 0 15px;
+        float: left;
+    }
+
+.container p {
+    float: left;
+    position: relative;
+    left: 165px;
+    margin: 8px;
+    color: white;
+}
+
+.dl {
+    float: right;
+    margin: 0;
+    display: inline-block;
+    height: 39px;
+}
+
+    .dl img {
+        position: relative;
+        left: -100px;
+    }
+
+    .dl p {
+        position: relative;
+        left: -300px;
+    }
+
+    .dl a {
+        padding: 15px;
+        position: relative;
+        left: -100px;
+        top: -13px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+    }
+
+        .dl a:hover {
+            color: red;
+        }
+/*LOGO和搜索栏的创建*/
+.content {
+    height: auto;
+    width: 100%;
+    margin: 0;
+}
+
+.LOGO .home {
+    color: rgb(27,161,157);
+}
+
+.LOGO {
+    height: 89px;
+    width: auto;
+}
+
+    .LOGO ul {
+        list-style-type: none;
+        float: left;
+    }
+
+    .LOGO li {
+        display: inline-block;
+        padding: 0 15px;
+    }
+
+        .LOGO li a {
+            text-decoration: none;
+            width: auto;
+            float: none;
+            font-size: large;
+            position: relative;
+            left: 400px;
+            top: 40px;
+            color: black;
+        }
+
+            .LOGO li a:hover {
+                color: red;
+            }
+
+            .LOGO li a:active {
+                color: black;
+            }
+
+.logo_1 {
+    float: left;
+    position: relative;
+    margin: 15px;
+    width: 30%;
+    height: auto;
+    left: 150px;
+}
+/*背景*/
+.bg {
+    background-image: url("kh/6.png");
+    width: 100%;
+    height: 380px;
+    background-size: 100%;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+/*搜索框*/
+.search-1 {
+    position: absolute;
+    width: 600px;
+    height: 40px;
+    margin: 240px 200px 160px 450px;
+}
+
+.submit-1 {
+    background-image: url("kh/7.png");
+    background-size: 100%;
+    width: 100px;
+    height: 40px;
+    float: left;
+    border: none;
+    outline: none;
+}
+
+.search_text-1 {
+    height: 40px;
+    width: 500px;
+    float: left;
+    outline: none;
+}
+
+.search-2 {
+    position: absolute;
+    height: 40px;
+    width: 600px;
+    margin: 290px 200px 110px 450px;
+}
+
+.submit-2 {
+    background-image: url("kh/8.png");
+    background-size: 100%;
+    height: 40px;
+    width: 100px;
+    float: left;
+    border: none;
+    outline: none;
+}
+
+.search_text-2 {
+    height: 40px;
+    width: 500px;
+    float: left;
+    outline: none;
+}
+/*搜索提示ʾ*/
+.text-3 {
+    font-size: small;
+    color: white;
+    margin: 340px 350px 40px 285px;
+    position: absolute;
+    left: 165px;
+    width: 400px;
+    opacity: 0.8;
+}
+
+.textmore {
+    position: absolute;
+    font-size: x-large;
+    color: rgb(27,161,157);
+    width: 1200px;
+    text-align: center;
+    margin: 35px 0 0 150px;
+}
+
+/*右悬浮*/
+.nav {
+    width: 80px;
+    height: auto;
+    position: fixed;
+    top: 230px;
+    right: 0;
+}
+    .nav div {
+        border-bottom: groove;
+    }
+.ct-1 {
+    width: auto;
+    height: auto;
+}
+    .ct-1 ul {
+        width: 80px;
+        height: auto;
+        position: relative;
+        display: none;
+        list-style-type:none;
+     }
+        .ct-1 ul li {
+            width: 80px;
+            height: auto;
+            position: absolute;
+            right: 210px;
+            top: -170px;
+        }
+
+    .ct-1:hover  ul{
+        display: block;
+    }
+.ct-2 {
+    width: auto;
+    height: auto;
+}
+    .ct-2 ul {
+        width: 80px;
+        height: auto;
+        position: relative;
+        display: none;
+        list-style-type: none;
+    }
+        .ct-2 ul li {
+            width: 80px;
+            height: auto;
+            position: absolute;
+            right: 210px;
+            top: -170px;            
+        }
+    .ct-2:hover ul {
+        display: block;
+    }
+/*左导航栏*/
+.left-navigation {
+    margin: 70px 0 0 150px;
+    width: 200px;
+    height: 223px;
+    float: left;
+}
+.left-navigation a {
+    color: white;
+    text-decoration:none;
+    padding: 16px 35px;
+}
+.left-navigation a:hover{
+    color:black;
+}
+.left-navigation div:hover {
+    background-color: white;
+}
+.ln-1,
+.ln-2,
+.ln-3,
+.ln-4 {
+    background-color: #3C3C3C;
+    display: block;
+    text-align: center;
+    font-size: larger;
+    border: groove;
+    padding: 13px;
+}
+/*左导航栏对应的框内内容*/
+#content-left_1,
+#content-left_2,
+#content-left_3,
+#content-left_4
+{
+    height: 358px;
+    width: 1000px;
+    float: left;
+    margin: 70px 0 0 0;
+    border-style: solid;
+    border-color: grey;
+}
+
+.content-box {
+    width: 475px;
+    height: 155px;
+    padding: 12px;
+    background-color: white;
+    float: left;
+    position: relative;
+}
+
+    .content-box img {
+        float: left;
+    }
+
+    .content-box p {
+        color: black;
+        display: inline-block;
+        margin: 0;
+        width: 270px;
+        position: relative;
+        opacity: 0.9;
+        top: -158px;
+        left: 220px;
+    }
+
+    .content-box a {
+        position: absolute;
+        bottom: 15px;
+        left: 430px;
+        font-size: small;
+        color: rgb(27,161,157);
+        text-decoration: none;
+    }
+
+        .content-box a:hover {
+            color: red;
+        }
+/*清除浮动*/
+.overflow {
+    clear: both;
+}
+/*底部介绍栏*/
+/*左边*/
+.bottom-left {
+    width: 600px;
+    height: 200px;
+    position: relative;
+    top: 50px;
+    left: 153px;
+    float: left;
+    border-top-style: solid;
+}
+
+    .bottom-left div {
+        width: 300px;
+        height: 100px;
+        float: left;
+    }
+
+    .bottom-left img {
+        position: relative;
+        top: 30px;
+    }
+
+    .bottom-left h2 {
+        position: relative;
+        left: 60px;
+        top: -15px;
+        opacity: 0.8;
+    }
+
+    .bottom-left p {
+        display: inline-block;
+        color: grey;
+        position: relative;
+        left: 61px;
+        top: -15px;
+        font-size:small;
+    }
+/*右边*/
+.bottom-right {
+    background-color: rgb(61,61,61);
+    width: 603px;
+    height: 200px;
+    position: relative;
+    top: 50px;
+    left: 153px;
+    float: left;
+}
+
+    .bottom-right div {
+        width: 300px;
+        height: 100px;
+        float: left;
+    }
+
+    .bottom-right img {
+        position: relative;
+        top: 30px;
+        left: 50px;
+    }
+
+    .bottom-right h2 {
+        position: relative;
+        left: 100px;
+        top: -15px;
+        color: white;
+        opacity: 0.8;
+    }
+
+    .bottom-right p {
+        display: inline-block;
+        color: white;
+        width: 200px;
+        position: relative;
+        left: 100px;
+        top: -15px;
+        opacity: 0.6;
+        font-size: small;
+    }
