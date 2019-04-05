@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>progressbar</title>
+	<meta charset="utf-8">
+	<style>
+		*{
+			margin:0;
+		}
+		#loading{
+			width:50%;
+			height:50px;
+			position:relative;		
+			margin:0 auto;	
+			border: 2px solid #000000;
+			border-radius: 15px;
+		}
+		#loading_1{
+			width:1%;
+			height:50px;
+			background-color:#F9FF9F;
+			border: 2px;
+			border-radius: 15px;
+	
+		}
+		#loadtext{
+			text-align:right;
+			height:50px;
+			position:absolute;
+			font-size: 200%;
+			top:1px;
+			right:0;
+		}
+    #cover{
+			width:100%;
+			position: absolute;
+			top:3px;
+			font-size:200%;
+			display:none;
+			text-align: center;
+		}
+		#content{
+			width:100%;
+			text-align: center;
+		}
+		#picture{
+			width:600px;
+			height:300px;
+		}
+	</style>
+</head>
+<body> 
+		<div id="content">
+				<img id="picture" src="ns1.jpg">
+</div>    
+	<div id="loading">
+		<div id="loading_1"></div>
+		<div id="loadtext">0%</div>
+		<div id="cover">加载完成</div>
+	</div>
+  <script>
+	  var i=1;
+	  var one=document.getElementById("loadtext");
+	  var two=document.getElementById("cover");
+		var three=document.getElementById("picture");
+		var four=document.getElementById("loading_1");
+	  var timer=setInterval(function(){
+		  four.style.width = i + "%";
+		  one.innerHTML = i + "%";
+		  i++;
+			if(i>=25)
+			{
+         three.src="ns2.jpg";
+			}
+			if(i>=50)
+			{
+         three.src="5.jpg";
+			}
+			if(i>=75)
+			{
+         three.src="6.jpg";
+			}
+		  if(i>100)
+		  {
+			  clearInterval(timer);
+			  one.style.display = "none";
+			  two.style.display = "block";
+				three.src="pig1.jpg";
+		  }
+
+	  },50)
+  </script>
+</body>
+</html>
