@@ -74,13 +74,42 @@ header ul{
 .dorpmenu{
     position: relative;
     text-align: center;
-    text-decoration: none;
     color:black;
     float: right;
-    top: -20px;
+    top:-20px;
+    height:23px;
     background-color: rgb(220,215,157);
-    width:5%;
-    right: 120px;
+    width:6%;
+    right: 100px;
+    z-index: 1;
+}
+.dorpmenu a{
+    color: rgb(137,134,97);
+}
+.nav_1{
+    border:1px solid grey;
+}
+.nav_1 a{
+    text-decoration: none;
+}
+.nav_2{
+    height:100px;
+    border-radius: 15px;
+}
+.list{
+    width:100%;
+   height:0;
+   overflow: hidden;
+   transition: 1s;
+   background-color: rgb(220,215,157);
+   border-radius: 15px;
+}
+.dorpmenu > li:nth-child(1):hover .list{
+    height:100px;
+    padding:3px 0;
+}
+.dorpmenu > li:nth-child(1):hover li{
+    padding:1px 0;
 }
 /*页眉下半部分*/
 .bg_1{
