@@ -11,7 +11,7 @@
         <div class="bg">
            <img src="css/picture/bg_2.jpg" width="100%" height="718">
         </div>
-        <a href="###"><img class="entry" src="css/picture/图层 3.png"></a>
+        <a  href="###" onclick="one()"><img class="entry"  src="css/picture/图层 3.png"></a>
         <div class="LOGO">
             <img src="css/picture/LOGO1.png">
         </div>
@@ -28,6 +28,30 @@
             <li><a href="###">大类3</a></li>
             <li><a href="###">大类4</a></li>
         </ul>
+        <!--登录界面-->
+        <div id="content">             
+              <div id="login">
+                  <a id="close" onclick="two()" href="###"><img src="css/picture/close.png"></a>
+                 <img src="css/picture/LOGO1.png" width="200">
+                  <form class="login_1">
+                      <div class="name_1">账号： <input id="name" type="text" placeholder="  用户名"></div>
+                      <div class="pw">密码： <input id="password" type="password" ></div>
+                  </form>
+                  <a id="click" href="###">登录</a>
+                  <a id="enroll" href="###">注册</a>
+                </div>
+            </div>
         </div>
+        </div>
+        <script>
+            function one() {
+               var name=document.getElementById("content");
+               name.style.display="block";
+            }
+            function two(){
+                var name=document.getElementById("content");
+                name.style.display="none";
+            }
+        </script>
     </body>
 </html>
