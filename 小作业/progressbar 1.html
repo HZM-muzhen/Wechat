@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>progressbar</title>
+	<meta charset="utf-8">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background-color: rgba(172, 107, 107, 0.418);
+		}
+		#loading{
+			width:50%;
+			height:50px;
+			position:relative;		
+			margin:0 auto;	
+			border: 2px solid #000000;
+			border-radius: 15px;
+		}
+		#loading_1{
+			width:1%;
+			height:50px;
+			background-color:#F9FF9F;
+			border: 2px;
+			border-radius: 15px;
+	
+		}
+		#loadtext{
+			text-align:right;
+			height:50px;
+			position:absolute;
+			font-size: 200%;
+			top:1px;
+			right:0;
+		}
+    #cover{
+			width:100%;
+			position: absolute;
+			top:3px;
+			font-size:200%;
+			display:none;
+			text-align: center;
+		}
+		#content{
+			width:100%;
+			text-align: center;
+		}
+		#picture{
+			width:600px;
+			height:300px;
+		}
+		/**/
+		.contain{
+			width: 600px;
+			height: 300px;
+			margin: 200px auto;
+			position: relative;
+			overflow: hidden;
+		}
+		
+		.contain ul{
+			position: absolute;
+			right: 5px;
+			bottom: 5px;
+			width: 120px;
+			height: 15px;
+			
+		}
+		.contain li{
+			display: inline-block;
+			background-color: white;
+			border-radius: 15px;
+			width: 15px;
+			height: 15px;
+			opacity: 0;
+			transition: 1s;
+		}
+		.contain a{			
+			width: 15px;
+			height: 15px;
+			z-index: 100;			
+			padding: 5px 10px;	
+			transition: 1s;
+				
+		}
+		#pre{
+			position: absolute;
+			top: 45%;
+			height: 30px;
+			width: 20px;
+			border-radius: 20px;
+			font-size: 150%;
+			line-height: -1px;
+			text-decoration: none;
+			background-color: grey;
+			opacity: 0;
+			text-align: center;
+		}
+		#next{
+			position: absolute;
+			top: 45%;
+			right: 0;
+			height: 30px;
+			font-size: 150%;
+			line-height: -1px;
+			width: 20px;
+			border-radius: 20px;
+			text-decoration: none;
+			background-color: grey;
+			opacity: 0;
+			text-align: center;
+		}
+		.contain:hover #pre{
+			opacity: 0.8;
+		}
+		.contain:hover #next{
+			opacity: 0.8;
+		}
+		.contain:hover li{
+			opacity: 0.8;
+		}
+		.banner{
+			width: 4200px;
+			height: 300px;
+			position: absolute;
+			transition: 1s;
+		}
+		.banner img{
+			display: inline-block;
+			width: 600px;
+			height: 300px;
+			margin: 0;
+			float: left;
+			
+		}
+		/*.on{
+			display: inline-block;
+			background-color: red;
+			border-radius: 15px;
+			width: 15px;
+			height: 15px;
+		}*/
+	</style>
+</head>
+<body> 
+
+	<div class="contain">
+		<!--轮播图-->
+		<div class="banner" style="left:0;">
+		<img src="ns1.jpg" alt="">
+		<img src="ns2.jpg" alt="">
+		<img src="pig1.jpg" alt="">
+		<img src="6.jpg" alt="">
+		<img src="5.jpg" alt="">
+		<img src="hy2.jpg" alt="">
+	    </div>
+		<!--按钮-->
+		<ul id="list">
+			<li style="background:red;" ><a href="###"></a></li>
+			<li><a href="###"></a></li>
+			<li><a href="###"></a></li>
+			<li><a href="###"></a></li>
+			<li><a href="###"></a></li>
+			<li><a href="###"></a></li>
+		</ul>
+		<!--左右箭头-->
+		<a id="pre" href="###">&lt;</a>
+		<a id="next" href="###">&gt;</a>
+	</div>
+	
+  <script>
+	  var ban = document.querySelector('.banner');
+	  var pre_1 = document.querySelector('#pre');/*上*/
+	  var next_1 = document.querySelector('#next')/*下*/
+	  var btn = document.getElementById("list").getElementsByTagName("li")/*小圆点*/
+	  var index = 0;
+	  pre_1.onclick = function(){
+		  pre_pic();
+	  }/*上*/
+	   next_1.onclick = function() {
+		  next_pic();
+		 
+	  }/*下*/
+	  /*右*/
+    function next_pic(){
+		index++;
+		if(index >= 6)
+		{
+			index = 0;
+		}
+		
+	change();//圆点变色
+	var newleft;
+	if( ban.style.left === "-3000px" )//最后一张图片(循环)
+	{
+		newleft = 0;
+	}
+	else
+	{
+	   newleft = parseInt(ban.style.left) - 600 ;
+	   console.log(parseInt(ban.style.left));
+	}
+	ban.style.left = newleft + 'px' ;//手动换照片
+	}
+	/*左*/
+    function pre_pic(){
+		if(index <= 0)
+		{
+			index = 6;
+		}
+		index--;
+	change();//圆点变色
+	var newleft;
+	if( ban.style.left === "0px" )//最后一张图片(循环)
+	{
+		newleft = -3000;
+	}
+	else
+	{
+	   newleft = parseInt(ban.style.left) + 600 ;
+	   console.log(parseInt(ban.style.left));
+	}
+	ban.style.left = newleft + 'px' ;//手动换照片
+	} 
+	/*小圆点伴随切换*/
+    function change() {
+		for(var i = 0 ;i < btn.length;i++)
+		{
+			btn[i].style.backgroundColor = 'white';
+		}
+		btn[index].style.backgroundColor = 'red';	
+	}
+	/*点击圆点变换*/
+	for(var i = 0;i < btn.length;i++)
+	{
+		(function(i){
+			btn[i].onclick = function() {
+		  ban.style.left = i * -600 + 'px';
+		  index = i ;
+           change();
+		}
+		})(i);}
+	
+  </script>
+</body>
+</html>
