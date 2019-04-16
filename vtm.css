@@ -283,7 +283,10 @@ header {
 .left-navigation a {
     color: white;
     text-decoration:none;
-    padding: 20px 36px;;
+    padding: 20px 36px;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    overflow: hidden;
 }
 .left-navigation a:hover{
     color:black;
