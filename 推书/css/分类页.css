@@ -5,14 +5,13 @@
 }
 body{
     width: 100%;
-    height: 1500px;
+    height: 1400px;
     margin: 0 auto;
-    background-color: rgb(224,224,224);
 }
 /*页眉*/
 header{
     width: 100%;
-    height: 250px;    
+    height: 300px;    
     background-color: white;
 }
 /*底部阴影*/
@@ -40,7 +39,7 @@ header form{
     width:20%;
     text-align: center;
     height: 30px;
-    margin:auto auto;
+    margin-left:900px;
     float: none;
     top:8px;
     border: 2px solid grey;
@@ -67,92 +66,92 @@ header form{
 .submit_1:hover{
     outline: none;
 }
-header ul{
-    list-style-type: none;
-}
-/*下拉列表*/
-.dorpmenu{
+.banner{
+    overflow: hidden;
+    width: 1519px;
+    height: 250px;
+    margin: 0 auto;
+    background-color: rgb(244,244,244);
     position: relative;
-    text-align: center;
-    color:black;
-    float: right;
-    top:-20px;
-    background-color: rgb(220,215,157);
-    width:6%;
-    right: 100px;
-    z-index: 1;
+    
 }
-.dorpmenu a{
-    color: rgb(137,134,97);
+.contain{
+    position: absolute;
+    width: 4557px;
+    height: 250px;  
+    transition: 1s;
 }
-.nav_1{
-    border:1px solid grey;
-    white-space: nowrap;
-
+.contain img{
+    transition: 2.5s;
+    width: 1519px;
+    height: 250px;
+    float: left;  
 }
-.nav_1 a{
-    text-decoration: none;
+.banner ul{
+    position: absolute;
+    right: 47%;
+    bottom: 0;
+    transition: 2s;
 }
-.nav_2{
-    height:100px;
+.banner li{
+    display: inline-block;
+    width: 15px;
+    margin: 0 5px 0 5px;
+    height: 15px;
     border-radius: 15px;
+    background-color: rgb(77,73,71);
 }
-.list{
-    width:100%;
-   height:0;
-   overflow: hidden;
-   transition: 1s;
-   background-color: rgb(220,215,157);
-   border-radius: 15px;
-}
-.dorpmenu > li:nth-child(1):hover .list{
-    height:100px;
-    padding:3px 0;
-}
-.dorpmenu > li:nth-child(1):hover li{
-    padding:1px 0;
-}
-/*页眉下半部分*/
-.bg_1{
-    position: relative;
-    background-image: url("picture/bg1.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width:100%;
-    height:200px;
-}
-.tip{
-    height: 40px;
-    width: 10%;
-    position: relative;
-    top:100px;
-    background-color: rgb(220,215,157);
-    margin: 0 auto;  
-    text-align: center; 
-}
-.tip p{
-    position: relative;
-    top:10px;
-    color: grey;
-    vertical-align: middle;
-    white-space: nowrap;
-    height:40px;
+.banner a{
+    padding: 10px;
 }
 /*主体部分*/
 .content{
-    width: 81%;
-    margin:0 auto;
+    width: 1105px;
+    margin: 0 auto;
+}
+.content_1{
+    width: 1105px;
+    margin: 0 auto;
     background-color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    height: 750px;
+}
+.nav_1{
+    width: 1020px;
+    margin: 0 auto;
+    height: 50px;
+}
+.nav_1 ul{
+    padding: 15px 0px;
+    position: absolute;
+}
+.nav_1 li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.nav_1 a{
+    text-decoration: none;
+    color: black;
+}
+.nav_1 span{
+    color: grey;
+}
+.nav_1 a:hover{
+    color: rgb(235,161,85);
+}
+hr{
+    position: relative;
+    bottom: -50px;
+    opacity: 0.5;
+    width: 100%;
 }
 .book_top{
     display: flex;
     width: 19%;
     height: auto;
-    padding:15px;
-    margin:30px 15px;
+    padding: 30px;
     position: relative;
     flex-direction: column-reverse;
 }
@@ -160,27 +159,27 @@ header ul{
     display: flex;
     width: 19%;
     height: auto;
-    padding:15px;
-    margin:100px 15px 200px 15px;
+    padding: 30px;
+    margin-top: 50px;
     position: relative;
     flex-direction: column-reverse;
 }
 
-.content ul{
-    margin-top: 20px;
-    width:89%;
+.content_1 ul{
+    margin-top: 30px;
+    width:78%;
     list-style-type: none;
     position: absolute;
     text-align: center;
 }
-.content li{
+.content_1 li{
     display: inline-block;
     padding:0 5px;
 }
 #name{
     position: absolute;
-    margin-top: 80px;
-    width:89%;
+    margin-top: 95px;
+    width:78%;
     height:auto;
     text-align: center;
 }
@@ -189,36 +188,36 @@ header ul{
 }
 .btn{
     position: relative;
+    top: 100px;
     text-align: center;
     display: table;
     width: 50px;
-    margin: -70px auto;
+    margin: 0 auto;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-.paging{
+.list{
     margin-bottom: 10px;
-    height:21px;
 
 }
-.paging ul{
+.list ul{
     white-space: nowrap;
     text-overflow: ellipsis;
     list-style-type: none;
 }
-.paging li{
+.list li{
     width: 20px;
     height: 20px;
     border-radius: 15px;
     display: inline-block;
 }
-.paging li:hover{
+.list li:hover{
     background-color: black;
 }
-.paging a:hover{
+.list a:hover{
     color: white;
 }
-.paging a{
+.list a{
     padding: 5px;
     text-decoration: none;
     color: black;
