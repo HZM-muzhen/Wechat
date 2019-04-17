@@ -140,40 +140,37 @@ header ul{
 }
 /*主体部分*/
 .content{
-    width: 81%;
-    margin:0 auto;
+    width :81%;
+    margin: 0 auto;
+    position: relative;
     background-color: white;
+}
+.content_1{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
 }
 .book_top{
     display: flex;
     width: 19%;
     height: auto;
-    padding:15px;
-    margin:30px 15px;
+    padding: 15px;
+    margin: 60px 15px;
     position: relative;
     flex-direction: column-reverse;
 }
-.book_bottom{
-    display: flex;
-    width: 19%;
-    height: auto;
-    padding:15px;
-    margin:100px 15px 200px 15px;
-    position: relative;
-    flex-direction: column-reverse;
-}
-
-.content ul{
+.book_top ul{
     margin-top: 20px;
     width:89%;
     list-style-type: none;
     position: absolute;
     text-align: center;
 }
-.content li{
+.book_top li{
     display: inline-block;
     padding:0 5px;
 }
@@ -188,17 +185,20 @@ header ul{
     width:100%;
 }
 .btn{
-    position: relative;
     text-align: center;
     display: table;
-    width: 50px;
-    margin: -70px auto;
+    width: 100%;
+    margin: 0 auto;
     white-space: nowrap;
     text-overflow: ellipsis;
+    bottom: 0;
+    margin-top: 80px;
 }
 .paging{
     margin-bottom: 10px;
     height:21px;
+    margin: 0 auto;
+    width:100%;
 
 }
 .paging ul{

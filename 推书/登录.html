@@ -10,7 +10,7 @@
         <!--背景和LOGO-->
         <div class="contain">
         
-        <a  href="###" onclick="one()"><img class="entry"  src="css/picture/图层 3.png"></a>
+        <a id="change" href="###" onclick="one()"><img class="entry"  src="css/picture/图层 3.png"></a>
         <div class="LOGO">
             <img src="css/picture/LOGO1.png">
         </div>
@@ -22,16 +22,16 @@
         </form>
         <!--分类-->
         <ul>
-            <li><a href="###">大类1</a></li>
-            <li><a href="###">大类2</a></li>
-            <li><a href="###">大类3</a></li>
-            <li><a href="###">大类4</a></li>
+            <li><a href="分类页_1.html" target="_blank">大类1</a></li>
+            <li><a href="分类页_2.html" target="_blank">大类2</a></li>
+            <li><a href="分类页_3.html" target="_blank">大类3</a></li>
+            <li><a href="分类页_4.html" target="_blank">大类4</a></li>
         </ul>
     </div>
         <!--登录界面-->
         <div id="content">             
               <div id="login">
-                  <a id="close" onclick="two()" href="###"><img src="css/picture/close.png"></a>
+                  <a id="close" onclick="three()" href="###"><img src="css/picture/close.png"></a>
                  <img src="css/picture/LOGO1.png" width="200">
                   <form class="login_1">
                       <div class="name_1">账号： <input id="name" type="text" placeholder="  用户名"></div>
@@ -45,12 +45,18 @@
         </div>
         <script>
             function one() {
-               var name=document.getElementById("content");
-               name.style.display="block";
+               var name = document.getElementById("content");
+               name.style.display = "block";
             }
             function two(){
-                var name=document.getElementById("content");
-                name.style.display="none";
+                var name = document.getElementById("content");
+                var entry = document.getElementById("change");          
+                entry.innerHTML = "用户名";
+                name.style.display = "none";
+            }
+            function three(){
+                var name = document.getElementById("content");
+                name.style.display = "none";
             }
         </script>
     </body>

@@ -9,8 +9,7 @@ body{
     background-attachment: fixed;
 }
 .contain{
-    width:30%;
-    
+    width:50%;
     margin:12% auto;
     text-align: center;
 }
@@ -48,6 +47,7 @@ form{
     position: relative;
     right: 30px;
     top: 3px;
+    outline: none;
 }
 .submit_1:hover{
     outline: none;
@@ -69,10 +69,11 @@ li a{
     color: rgb(116, 118, 118);
 }
 /*登录框*/
-.entry{
+#change{
     position: absolute;
     right: 60px;
     top: 40px;
+    color: black;
 }
 #content{
     width: 100%;
