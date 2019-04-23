@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+body{
+    width: 100%;
+    height: 1400px;
+    margin: 0 auto;
+}
+/*页眉*/
+header{
+    width: 100%;
+    height: 300px;    
+    background-color: white;
+}
+/*底部阴影*/
+.shadow{
+    width:100%;
+    height:50px;
+    box-shadow: 0px 2px 5px grey;
+}
+.head{
+       width: 1235px;
+       height: 50px;
+       position: relative;
+       margin: 0 auto;  
+       text-align: center;   
+}
+.logo_1{
+     position: absolute;
+     left: 60px;
+     vertical-align: middle;
+     top:10px;
+}
+/*搜索栏*/
+header form{
+    position: relative;
+    width:20%;
+    text-align: center;
+    height: 30px;
+    margin-left:900px;
+    float: none;
+    top:8px;
+    border: 2px solid grey;
+    border-radius:15px;
+}
+.text_1{
+    width:200px;
+    float: none;
+    height:25px;
+    margin-top: 0px;
+    margin-right: 20px; 
+    border:0;
+    outline: none;
+    padding-left: 5px;
+}
+.submit_1{
+    position: absolute;
+    right:8px;
+    top:3px;
+    float: right;
+    width:20px;
+    border:0;
+}
+.submit_1:hover{
+    outline: none;
+}
+/*轮播图*/
+.banner{
+    overflow: hidden;
+    width: 1519px;
+    height: 250px;
+    margin: 0 auto;
+    background-color: rgb(244,244,244);
+    position: relative;
+    
+}
+.contain{
+    position: absolute;
+    width: 4557px;
+    height: 250px;  
+    transition: 1s;
+}
+.contain img{
+    transition: 2.5s;
+    width: 1519px;
+    height: 250px;
+    float: left;  
+}
+.banner ul{
+    position: absolute;
+    right: 47%;
+    bottom: 0;
+    transition: 2s;
+}
+.banner li{
+    display: inline-block;
+    width: 15px;
+    margin: 0 5px 0 5px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: rgb(77,73,71);
+}
+.banner a{
+    padding: 10px;
+}
+
+/*导航条*/
+.nav_1{
+    width: 1020px;
+    margin: 0 auto;
+    height: 50px;
+}
+.nav_1 ul{
+    padding: 15px 0px;
+    position: absolute;
+}
+.nav_1 li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.nav_1 a{
+    text-decoration: none;
+    color: grey;
+}
+.nav_1 span{
+    color: grey;
+}
+.nav_1 a:hover{
+    color: rgb(235,161,85);
+}
+/*内容*/
+.content_1{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: white;
+    height: 1000px;
+    position: relative;
+}
+/*主体部分*/
+.bg{
+    width: 100%;
+    background-color: rgb(218,215,215);
+    margin-bottom: 100px;
+}
+.content{
+    width: 75%;
+    margin: 0 auto;
+    position: relative;
+}
+.book_top{
+    position: relative;
+    top: 14%;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+}
+/*介绍*/
+#word{
+    width: 100%;
+}
+.list_1 img{
+    position: relative;
+    top: 10px;
+    width: 30px;
+    padding-right: 15px;
+    border-right: 2px solid grey;
+}
+#word ul{
+    list-style-type: none;
+    margin-left: 80px;
+    padding: 10px;
+}
+#word li{
+   padding: 3px;
+}
+.list_1 p{
+    padding: 5px 10px;
+    margin-left: 5px;
+    display: inline-block;
+
+}
+.list_2{
+      position: relative;
+      left: 80px;
+      top: -43px;
+}
+.list_3{
+    position: relative;
+    left: 95px;
+    top: -37px;
+}
+.logo_2{
+    margin-bottom: 10px;
+}
+.logo_2 img{
+    margin-right: 20px;
+}
+.logo_3 img{
+    margin-right: 20px;
+}
+.three{
+    margin-top: 20px;
+}
+.book_name{
+    font-size: 200%;
+    margin-left: 150px;
+    margin-top: 0px;
+}
+/*简介*/
+.book_bottom{
+    position: relative;
+    margin: 0 auto;
+    top: 15%;
+    width: 75%;
+    height: 300px;
+}
+.book_bottom p{
+    text-indent: 2em;
+}
+.book_bottom h3{
+    margin-bottom: 5px;
+}
+.author{
+    margin-bottom: 100px;
+}
+.left_1{
+    position: absolute;
+    top: 100px;
+    left: 80px;
+}
+.right_1{
+    position: absolute;
+    bottom: 100px;
+    right: 80px;
+}
+/*尾部按钮*/
+.btn{
+    position: relative;
+    top: 0px;
+    text-align: center;
+    display: table;
+    width: 50px;
+    margin: 0 auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    opacity: 0.6;
+}
+.list{
+    margin-bottom: 5px;
+
+}
+.list ul{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    list-style-type: none;
+}
+.list li{
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    display: inline-block;
+}
+.list li:hover{
+    background-color: black;
+}
+.list a:hover{
+    color: white;
+}
+.list a{
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+span{
+    margin: 0 auto;
+}
